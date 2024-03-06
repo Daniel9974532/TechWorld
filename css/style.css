@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #e5e5f7;
+opacity: 1;
+background-image:  radial-gradient(#444cf7 2px, transparent 2px), radial-gradient(#444cf7 2px, #e5e5f7 2px);
+background-size: 80px 80px;
+background-position: 0 0,40px 40px;
+}
+nav{
+    background-color: white;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 3px 10px rgb(25, 122, 233);
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    height: 47px;
+    margin-bottom: 5px;
+}
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 0 13px;
+}
+
+nav a{
+    text-decoration: none;
+    
+}
+
+a:hover{
+    color: rgb(25, 122, 233);
+}
+span{
+    color: rgb(25, 122, 233);
+}
+nav h1{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+header{  
+    background-image: url(../img/fondo.webp) ;
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 10px 3px rgb(25, 122, 233);
+    height: 500px;
+    background-color: aqua;
+    width: 100%;  
+    index: 99;
+}
+ 
+input[type="text"] {
+    font-size: 16px;
+    color: #000;
+  }
+
+.count-product{
+    margin-left: 32px;
+    
+}
+.car{
+    margin-right: 15px;
+}
+.cart{
+    
+    width: 30px; 
+}
+
+.container{
+    
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+
+.products{
+    padding-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carts{
+    border-radius: 10px;
+    background-color: #F4F4F4;
+    max-width: 250px;
+    box-shadow: 0 3px 5px rgb(25, 122, 233);
+    padding-bottom: 34px;
+    margin-bottom: 40px;
+}
+.carts img{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    border-bottom: solid 1px black ;
+}
+.price_carts{
+    font-family: system-ui;
+    font-weight: 500;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+.carts p{
+    margin-bottom: 10px;
+}
+/*precio*/
+.carts div p{
+    position: absolute;
+    top: 0;   
+    background-color: rgb(25, 122, 233);
+    color: #000000;
+    padding: 2px 7px 4px 21px;
+}
+.carts span{
+    color: #000;
+}
+
+.carts div{
+    position: relative;
+}
+
+.carts a{
+    border-radius: 10px;
+    font-family: system-ui;
+    text-decoration: none;
+    background: rgb(25, 122, 233);
+    padding: 9px 23px;
+    color: #000000;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+
+.carts a:hover{
+    background: #fff;
+    color: rgb(0, 0, 0);
+    border: solid 2px rgb(25, 122, 233);
+    transition-duration: .2s;
+}
+
+/*Ventana del carrito*/
+.cart-products{
+    position: absolute!important;
+    top: 82px;
+    right: -18px;
+    background-color: #fff;
+    padding: 0 18px;
+    box-shadow: 0 3px 10pxrgb(25, 122, 233);
+    display: none;
+    min-width: 290px;
+}
+.cart-products .item img{
+    width: 115px;
+}
+
+.cart-products .item{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px rgb(25, 122, 233);
+}
+.cart-products .item .item-content{
+    margin: 0 19px;
+    width: 201px;
+}
+.cart-products .item .item-content h5{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.cart-products .item .item-content h6{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.cart-products .item span{
+    background-color: rgb(25, 122, 233);
+    padding: 0px 5px;
+    border-radius: 50%;
+    color: #fff;
+    font-family: system-ui;
+    cursor: pointer;
+}
+.cart-products h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.cart-products .item .item-content h5.cart-price{
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+p.close-btn{
+    margin-top: 3px; 
+    cursor: pointer;
+    color: rgb(25, 122, 233);
+}
+.cart-products h2{
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+footer{
+    background-color: rgb(212, 209, 206);
+    text-align: center;
+    padding: 10px 0;
+}
