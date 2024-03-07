@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWorld</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <h1>Tech<span>World</span></h1>
+
+            <ul>
+                <li><a href="ingles.html">English</a></li>
+                <li><a href="index.html">Spanish</a></li>
+                
+                <div>
+                    
+                    <div class="car">
+                    <p class="count-product">0</p>
+                    <img onclick="showCart(this)" class="cart" src="img/cart.png" alt="">
+                    </div>
+
+                    <div class="cart-products" id="products-id">
+                        
+                        <p class="close-btn" onclick="closeBtn()">X</p>
+                        <h3>My Cart</h3>
+
+                        <div class="card-items"></div>
+
+                        <h2>Total: $<strong class="price-total">0</strong></h2>
+                    </div>
+                </div>         
+            </ul>
+        </nav>
+    </header>
+    
+
+    
+    <section class="container">
+                
+        <div class="products">
+            
+             <div class="carts">
+                <div>
+                    <img src="img/xiaomi_poco_x5.jpg" alt="">
+                    <p class="price_carts"><span>325</span>$</p>
+                </div>
+                
+                <p class="title">Xiaomi Poco X5 5G 256Gb / 8Ram / 48Mp Cellphone Green</p>
+
+                <p class="amount">Quantity : <p id="poco_x5">5</p> </p> 
+                <a href="#" class="btn-add-cart" data-id="pocox5" onclick="descontar()">Add</a>                  
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="img/iphone13.png" alt="">
+                    <p><span>914</span>$</p>
+                </div>
+                <p class="title"> Apple iPhone 13 128gb 12mpx Camera Blue</p>
+                <p class="amount">Quantity : <p id="iphone13">5</p> </p> 
+                <a href="#" class="btn-add-cart" data-id="iphone13" onclick="descontar()">Add</a>                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="img/uricurales1.jpg" alt="">
+                    <p><span>12.50</span>$</p>
+                </div>
+                <p class="title"> Inpods 12 Bluetooth 5.0 Multicolor Touch Earphones Black</p>
+                <p class="amount">Quantity : <p id="numero2">5</p> </p> 
+                <a href="" data-id="3" class="btn-add-cart">Add</a>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="img/auricurales2.jpg" alt="">
+                    <p><span>20</span>$</p>
+                </div>
+                <p class="title"> AUT120 Wireless Earphones Bluetooth 1Hour Black</p>
+                <p class="amount">Quantity : <p id="numero2">5</p> </p> 
+                <a href="" class="btn-add-cart">Add</a>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="img/xiaomi_note12.jpg" alt="">
+                    <p><span>200</span>$</p>
+                </div>
+                <p class="title"> Xiaomi Note 12 4/128gb - 1 Year Warranty</p>
+                <p class="amount">Quantity : <p id="numero2">5</p> </p> 
+                <a href="" data-id="5" class="btn-add-cart">Add</a>
+            </div>
+
+            
+
+            <div class="carts">
+                <div>
+                    <img src="img/tecno.jpeg" alt="">
+                    <p><span>138</span>$</p>
+                </div>
+                <p class="title"> Tecno Spark 10c 128Gb 16 Ram Black + Earphones</p>
+                <p class="amount">Quantity : <p id="numero2">5</p> </p>
+                <a href="" data-id="7" class="btn-add-cart">Add</a>
+            </div>
+         
+            <div class="carts">
+                <div>
+                    <img src="img/auricurales_F9.jpeg" alt="">
+                    <p><span>17.55</span>$</p>
+                </div>
+                <p class="title"> F9-5C Bluetooth in-ear Earphones Black</p>
+                <p class="amount">Quantity : <p id="numero2">5</p> </p>
+                <a href="" data-id="11" class="btn-add-cart">Add</a>
+            </div>
+
+                 
+            
+            <div class="carts">
+                <div>
+                    <img src="img/galaxy_a34.jpeg" alt="">
+                    <p><span>222</span>$</p>
+                </div>
+                <p class="title"> Refurbished iPhone SE 2020 128GB 12 Months Warranty Black</p>
+                <p class="amount">Quantity : <p id="numero2">5</p> </p>
+                <a href="" data-id="16" class="btn-add-cart">Add</a>
+            </div>
+           
+            
+            <div class="carts">
+                <div>
+                    <img src="img/gs7fa.jpg" alt="">
+                    <p><span>27.9</span>$</p>
+                </div>
+                <p class="title">GS7FA Bluetooth Wireless Gamer Headphones With Microphone</p>
+                <p class="amount">Quantity : <p id="numero2">5</p> </p>
+                <a href="" data-id="25" class="btn-add-cart">Add</a>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="img/g2000.jpeg" alt="">
+                    <p><span>27.46</span>$</p>
+                </div>
+                <p class="title">Audífonos Gamer G2000 Cancelación De Ruido Aux 3.5Mm A</p>
+                <p class="amount">Quantity : <p id="numero2">5</p> </p>
+                <a href="" data-id="27" class="btn-add-cart">Add</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/aut2005.jpg" alt="">
+                    <p><span>21.22</span>$</p>
+                </div>
+                <p class="title">Audifonos Inalambricos AUT205 Bluetooth 1Hora Color Negro</p>
+                <p class="amount">Quantity : <p id="numero2">5</p> </p>
+                <a href="" data-id="28" class="btn-add-cart">Add</a>
+            </div>
+
+ 
+        </div>
+    </section>
+            </footer>
+
+            <script>
+                function showCart(x){
+                    document.getElementById("products-id").style.display = "block";
+                }
+                function closeBtn(){
+                     document.getElementById("products-id").style.display = "none";
+                }
+        
+            </script>
+            <script src="js/custom.js" ></script>
+            
+            <footer>Daniel Osorio Escobar &copy</footer>
+        </body>
+        </html>                
